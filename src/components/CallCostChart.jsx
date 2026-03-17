@@ -16,8 +16,8 @@ function CallCostChart({ data }) {
   }));
 
   return (
-    <div style={{ width: "100%", height: 300, marginBottom: "30px" }}>
-      <h2>Call Cost Analytics</h2>
+    <div className="w-full h-[300px] mb-8">
+      <h2 className="text-xl font-semibold mb-4">Call Cost Analytics</h2>
       <ResponsiveContainer>
         <BarChart data={chartData}>
           <CartesianGrid strokeDasharray="3 3" />

@@ -20,8 +20,8 @@ function CityPieChart({ data }) {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AA66CC"];
 
   return (
-    <div style={{ width: "100%", height: 300, marginBottom: "30px" }}>
-      <h2>Calls by City</h2>
+    <div className="w-full h-[300px] mb-8">
+      <h2 className="text-xl font-semibold mb-4">Calls by City</h2>
 
       <ResponsiveContainer>
         <PieChart>

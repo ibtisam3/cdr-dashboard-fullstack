@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Label } from "recharts";
 
 function TimelineChart({ data }) {
   if (data.length === 0) return null;
@@ -23,21 +23,32 @@ function TimelineChart({ data }) {
   }));
 
   return (
-    <div style={{ width: "100%", height: 300, marginBottom: "30px" }}>
-      <h2>Call Activity Timeline</h2>
+    <div className="w-full h-[300px] mb-8">
+      <h2 className="text-xl font-semibold mb-4">Call Activity Timeline</h2>
 
       <ResponsiveContainer>
         <LineChart data={chartData}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="hour" />
-          <YAxis />
+          
+          <XAxis dataKey="hour">
+            <Label value="Hour" offset={-5} position="insideBottom" />
+          </XAxis>
+
+          <YAxis>
+            <Label value="Number of Calls" angle={-90} position="insideLeft" />
+          </YAxis>
+
           <Tooltip />
           <Line type="monotone" dataKey="calls" stroke="#8884d8" />
         </LineChart>
       </ResponsiveContainer>
-
     </div>
   );
 }
 
 export default TimelineChart;
+
+
+
+
+

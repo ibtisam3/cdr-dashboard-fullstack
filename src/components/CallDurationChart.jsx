@@ -32,3 +32,4 @@ function CallDurationChart({ data }) {
 }
 
 export default CallDurationChart;
+
