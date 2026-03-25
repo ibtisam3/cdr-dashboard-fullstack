@@ -15,6 +15,7 @@ The CDR Dashboard is a full-stack web application for managing **Call Data Recor
 ## Tech Stack
 - **Frontend:** React, Vite, TailwindCSS
 - **Backend:** Node.js, Express
+- **Database:** MongoDB
 - **Authentication:** JWT tokens
 - **API Testing:** Postman
 - **Other Tools:** Git/GitHub, VSCode
