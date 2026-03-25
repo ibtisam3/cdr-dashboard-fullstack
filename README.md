@@ -29,7 +29,7 @@ Postman was used to test the backend routes before connecting them to the fronte
 
 ---
 
-## Project Structure (Explained)
+## Project Structure 
 - **Frontend:** React components are in `src/components/` and pages like Login and Dashboard are in `src/pages/`. Static assets are in `public/`. Config files include `package.json`, `vite.config.js`, `tailwind.config.js`, and `postcss.config.js`.
 - **Backend:** All backend logic is in `telecom-backend/`. Key files include `auth.js`, `cdr.js`, `cdrRoutes.js`, `tokenCheck.js`, `user.js`, and `index.js`. (Handles authentication and CDR routes)
 - **Screenshots:** All screenshots, including Postman API tests, are in the `screenshots/` folder.
